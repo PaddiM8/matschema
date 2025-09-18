@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+body {
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image:
+    linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "lunch-list dinner-list"
+        "navigation navigation";
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    width: 100%;
+    max-width: 45em;
+    padding: 1.25em 1.75em;
+    background-color: white;
+    border-radius: 0.75em;
+}
+
+h1 {
+    grid-area: title;
+    margin: 0;
+}
+
+.lunch-list {
+    grid-area: lunch-list;
+}
+
+.dinner-list {
+    grid-area: dinner-list;
+}
+
+.lunch-list, .dinner-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-header {
+    margin: 0;
+    font-weight: 650;
+    font-size: 1.2em;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em 0;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.item .week {
+    font-weight: 550;
+    font-size: 0.7em;
+    color: #757575;
+}
+
+.item .name-container {
+    height: 20px;
+    max-height: 20px;
+}
+
+.item .name {
+    font-weight: 550;
+    font-size: 0.9em;
+}
+
+.item .name:empty::before {
+    display: inline-block;
+    content: '-';
+}
+
+.item .body {
+    display: none;
+}
+
+.navigation {
+    grid-area: navigation;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navigation button {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 450;
+    font-size: 0.8em;
+    cursor: pointer;
+}
