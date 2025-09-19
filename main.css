@@ -74,6 +74,10 @@ h1 {
     color: #757575;
 }
 
+.item .week.now {
+    color: oklch(54.6% 0.245 262.881);
+}
+
 .item .name-container {
     height: 20px;
     max-height: 20px;

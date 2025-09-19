@@ -68,17 +68,28 @@ function reload() {
     for (let i = 0; i < 4; i++) {
         const week = weeks[i];
         const dataItem = dataItems[week];
-        const weekText = week == weekNow ? "Nu" : `v${week}`;
 
         const lunchNameElement = lunchItems[i].querySelector(".name");
-        lunchItems[i].querySelector(".week").textContent = weekText;
         lunchNameElement.textContent = `${dataItem.lunch}`;
         fitText(lunchNameElement, targetHeight);
 
         const dinnerNameElement = dinnerItems[i].querySelector(".name");
-        dinnerItems[i].querySelector(".week").textContent = weekText;
         dinnerNameElement.textContent = `${dataItem.dinner}`;
         fitText(dinnerNameElement, targetHeight);
+
+        const weekText = week == weekNow ? "Nu" : `v${week}`;
+        const lunchWeekElement = lunchItems[i].querySelector(".week");
+        const dinnerWeekElement = dinnerItems[i].querySelector(".week");
+        if (week == weekNow) {
+            lunchWeekElement.textContent = "Nu";
+            dinnerWeekElement.textContent = "Nu";
+
+            lunchWeekElement.classList.add("now");
+            dinnerWeekElement.classList.add("now");
+        } else {
+            lunchWeekElement.textContent = `v${week}`;
+            dinnerWeekElement.textContent = `v${week}`;
+        }
     }
 
     for (let i = 0; i < 4; i++) {
