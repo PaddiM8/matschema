@@ -92,7 +92,7 @@
     "10": {
         "dinner": {
             "name": "Amerikanska pannkakor med blåbär",
-            "notes": null
+            "notes": "Ha 20-40% emmervete i smeten (fullkorn)"
         },
         "lunch": {
             "name": "Bratwurst med dampfnudeln och curryketchup (blanda ketchup med currypulver)",
@@ -146,7 +146,7 @@
         },
         "lunch": {
             "name": "Rödbetsbiffar (med jordnötter i) med potatis och stuvad spenat",
-            "notes": null
+            "notes": "Gör jordnötssmör av hälften av jordnötterna"
         }
     },
     "16": {
@@ -212,7 +212,7 @@
     "22": {
         "dinner": {
             "name": "Spenatravioli i ostsås",
-            "notes": null
+            "notes": "600g mjöl"
         },
         "lunch": {
             "name": "Pierogi",
@@ -396,7 +396,7 @@
         },
         "lunch": {
             "name": "Hackad chorizo med gnocchi i gräddig tomatsås",
-            "notes": null
+            "notes": "900 g korv, 1 kg gnocchi, 800 g finkrossade tomater"
         }
     },
     "41": {
