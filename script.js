@@ -82,8 +82,9 @@ function showPopup(week, data, listElement) {
 }
 
 function reload() {
-    const now = new Date();
+    clearPopups();
 
+    const now = new Date();
     title.textContent = monthNames[selectedMonth];
     previousMonthButton.textContent = "← " + monthNames[getPreviousMonthNumber()];
     nextMonthButton.textContent = monthNames[getNextMonthNumber()] + " →";
