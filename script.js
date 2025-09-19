@@ -77,7 +77,6 @@ function reload() {
         dinnerNameElement.textContent = `${dataItem.dinner}`;
         fitText(dinnerNameElement, targetHeight);
 
-        const weekText = week == weekNow ? "Nu" : `v${week}`;
         const lunchWeekElement = lunchItems[i].querySelector(".week");
         const dinnerWeekElement = dinnerItems[i].querySelector(".week");
         if (week == weekNow) {
@@ -89,6 +88,9 @@ function reload() {
         } else {
             lunchWeekElement.textContent = `v${week}`;
             dinnerWeekElement.textContent = `v${week}`;
+
+            lunchWeekElement.classList.remove("now");
+            dinnerWeekElement.classList.remove("now");
         }
     }
 
