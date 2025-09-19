@@ -47,6 +47,14 @@ h1 {
     margin: 0;
 }
 
+button {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    font-weight: 550;
+    cursor: pointer;
+}
+
 .lunch-list {
     grid-area: lunch-list;
 }
@@ -56,8 +64,49 @@ h1 {
 }
 
 .lunch-list, .dinner-list {
+    position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.hidden, .popup.hidden {
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 2.5em;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 2.5em);
+    background-color: white;
+}
+
+.popup-header {
+    margin: 0;
+    font-weight: 550;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.popup p {
+    margin: 0.8em 0;
+    font-size: 0.65em;
+    font-weight: 550;
+}
+
+.popup p:empty::before {
+    display: inline-block;
+    content: "Inga anteckningar.";
+    color: #757575;
+}
+
+.popup-back-button {
+    margin-top: 0.8em;
+    margin-right: auto;
+    font-size: 0.65em;
 }
 
 .item-header {
@@ -73,13 +122,13 @@ h1 {
     border-bottom: 1px solid #bdbdbd;
 }
 
-.item .week {
+.week {
     font-weight: 550;
     font-size: 0.7em;
     color: #757575;
 }
 
-.item .week.now {
+.week.now {
     color: oklch(54.6% 0.245 262.881);
 }
 
@@ -91,6 +140,7 @@ h1 {
 .item .name {
     font-weight: 550;
     font-size: 0.9em;
+    cursor: pointer;
 }
 
 .item .name:empty::before {
@@ -110,10 +160,5 @@ h1 {
 }
 
 .navigation button {
-    background-color: transparent;
-    padding: 0;
-    border: 0;
-    font-weight: 550;
     font-size: 0.8em;
-    cursor: pointer;
 }

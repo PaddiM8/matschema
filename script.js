@@ -3,6 +3,7 @@ const dinnerItems = document.querySelectorAll(".dinner-list > .item");
 const title = document.getElementById("title");
 const previousMonthButton = document.getElementById("previous-month-button");
 const nextMonthButton = document.getElementById("next-month-button");
+const weekNow = Temporal.Now.plainDateISO().weekOfYear;
 
 let dataItems = {};
 let selectedMonth = new Date().getMonth();
@@ -55,6 +56,31 @@ function getPreviousMonthNumber() {
     return selectedMonth == 0 ? 11 : selectedMonth - 1;
 }
 
+function clearPopups() {
+    for (const popup of document.querySelectorAll(".popup")) {
+        popup.classList.add("hidden");
+    }
+}
+
+function showPopup(week, data, listElement) {
+    clearPopups();
+
+    const popup = listElement.querySelector(".popup");
+    popup.classList.remove("hidden");
+
+    const weekElement = popup.querySelector(".week");
+    if (week == weekNow) {
+        weekElement.textContent = "Nu";
+        weekElement.classList.add("now");
+    } else {
+        weekElement.textContent = `v${week}`;
+        weekElement.classList.remove("now");
+    }
+
+    popup.querySelector(".popup-header").textContent = data.name;
+    popup.querySelector("p").innerHTML = data.notes;
+}
+
 function reload() {
     const now = new Date();
 
@@ -63,19 +89,24 @@ function reload() {
     nextMonthButton.textContent = monthNames[getNextMonthNumber()] + " →";
 
     const weeks = getFirstFourWeeksOfMonth(now.getFullYear(), selectedMonth);
-    const weekNow = Temporal.Now.plainDateISO().weekOfYear;
     const targetHeight = lunchItems[0].querySelector(".name").offsetHeight;
     for (let i = 0; i < 4; i++) {
         const week = weeks[i];
         const dataItem = dataItems[week];
 
         const lunchNameElement = lunchItems[i].querySelector(".name");
-        lunchNameElement.textContent = `${dataItem.lunch}`;
+        lunchNameElement.textContent = `${dataItem.lunch.name}`;
         fitText(lunchNameElement, targetHeight);
+        lunchNameElement.onclick = () => {
+            return showPopup(week, dataItem.lunch, lunchItems[i].parentElement);
+        }
 
         const dinnerNameElement = dinnerItems[i].querySelector(".name");
-        dinnerNameElement.textContent = `${dataItem.dinner}`;
+        dinnerNameElement.textContent = `${dataItem.dinner.name}`;
         fitText(dinnerNameElement, targetHeight);
+        dinnerNameElement.onclick = () => {
+            return showPopup(week, dataItem.dinner, dinnerItems[i].parentElement);
+        }
 
         const lunchWeekElement = lunchItems[i].querySelector(".week");
         const dinnerWeekElement = dinnerItems[i].querySelector(".week");
@@ -117,3 +148,7 @@ nextMonthButton.addEventListener("click", () => {
     selectedMonth = getNextMonthNumber();
     reload();
 });
+
+for (const popupBackButton of document.querySelectorAll(".popup-back-button")) {
+    popupBackButton.addEventListener("click", clearPopups);
+}
