@@ -22,18 +22,24 @@ const monthNames = [
     "December",
 ];
 
-function getFirstFourWeeksOfMonth(year, month) {
+function getFirstNWeeksOfMonth(year, month, count) {
     const weeks = new Set();
     const date = new Date(year, month, 1);
-    while (weeks.size < 4 && date.getMonth() === month) {
+    const offsetToFirstMonday = (8 - date.getDay()) % 7;
+    date.setDate(date.getDate() + offsetToFirstMonday);
+
+    while (weeks.size < count && date.getMonth() === month) {
         const plainDate = Temporal.PlainDate.from({
             year: date.getFullYear(),
             month: date.getMonth() + 1,
-            day: date.getDate()
+            day: date.getDate(),
         });
+
         weeks.add(plainDate.weekOfYear);
         date.setDate(date.getDate() + 7);
     }
+
+    console.log(weeks)
 
     return [...weeks];
 }
@@ -51,7 +57,7 @@ function fitText(text, targetHeight) {
 
 function fitAllText() {
     const targetHeight = lunchItems[0].querySelector(".name").offsetHeight;
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < lunchItems.length; i++) {
         const lunchNameElement = lunchItems[i].querySelector(".name");
         fitText(lunchNameElement, targetHeight);
 
@@ -93,6 +99,16 @@ function showPopup(week, data, listElement) {
     popup.querySelector("p").innerHTML = data.notes;
 }
 
+const getWeeksInMonth = (year, month) => {
+    const date = Temporal.PlainDate.from({
+        year,
+        month: month + 1,
+        day: 1
+    });
+
+    return date.daysInMonth == 31 ? 5 : 4;
+};
+
 function reload() {
     clearPopups();
 
@@ -101,10 +117,31 @@ function reload() {
     previousMonthButton.textContent = "← " + monthNames[getPreviousMonthNumber()];
     nextMonthButton.textContent = monthNames[getNextMonthNumber()] + " →";
 
-    const weeks = getFirstFourWeeksOfMonth(now.getFullYear(), selectedMonth);
-    const targetHeight = lunchItems[0].querySelector(".name").offsetHeight;
-    for (let i = 0; i < 4; i++) {
+    const weeks = getFirstNWeeksOfMonth(now.getFullYear(), selectedMonth, 5);
+    const targetHeight = lunchItems[0].querySelector(".name-container").offsetHeight;
+    const emptyItem = {
+        dinner: {
+            name: "-",
+            notes: "-",
+        },
+        lunch: {
+            name: "-",
+            notes: "-",
+        },
+    };
+
+    for (let i = 0; i < lunchItems.length; i++) {
         const week = weeks[i];
+        const isEmptyWeek = i == weeks.length;
+        if (isEmptyWeek) {
+            lunchItems[i].style.visibility = "hidden";
+            dinnerItems[i].style.visibility = "hidden";
+            continue;
+        }
+
+        lunchItems[i].style.visibility = "";
+        dinnerItems[i].style.visibility = "";
+
         const dataItem = dataItems[week];
 
         const lunchNameElement = lunchItems[i].querySelector(".name");
