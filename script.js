@@ -42,9 +42,21 @@ function fitText(text, targetHeight) {
     let fontSize = 20;
     text.style.fontSize = fontSize + "px";
 
-    while (text.offsetHeight > targetHeight && fontSize > 12) {
+    const minFontSize = window.screen.width < 600 ? 9 : 12;
+    while (text.offsetHeight > targetHeight && fontSize > minFontSize) {
         fontSize -= 0.5;
         text.style.fontSize = fontSize + "px";
+    }
+}
+
+function fitAllText() {
+    const targetHeight = lunchItems[0].querySelector(".name").offsetHeight;
+    for (let i = 0; i < 4; i++) {
+        const lunchNameElement = lunchItems[i].querySelector(".name");
+        fitText(lunchNameElement, targetHeight);
+
+        const dinnerNameElement = dinnerItems[i].querySelector(".name");
+        fitText(dinnerNameElement, targetHeight);
     }
 }
 
@@ -126,13 +138,7 @@ function reload() {
         }
     }
 
-    for (let i = 0; i < 4; i++) {
-        const lunchNameElement = lunchItems[i].querySelector(".name");
-        fitText(lunchNameElement, targetHeight);
-
-        const dinnerNameElement = dinnerItems[i].querySelector(".name");
-        fitText(dinnerNameElement, targetHeight);
-    }
+    fitAllText();
 }
 
 fetch("items.json").then(async response => {
@@ -153,3 +159,5 @@ nextMonthButton.addEventListener("click", () => {
 for (const popupBackButton of document.querySelectorAll(".popup-back-button")) {
     popupBackButton.addEventListener("click", clearPopups);
 }
+
+window.addEventListener("resize", fitAllText);
