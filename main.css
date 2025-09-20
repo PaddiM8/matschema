@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -116,6 +120,7 @@ button {
 .item {
     display: flex;
     flex-direction: column;
+    max-width: calc(100vw / 2 - 1.75em - 1em);
     padding: 0.8em 0;
     border-bottom: 1px solid #bdbdbd;
 }
@@ -138,6 +143,8 @@ button {
 .item .name {
     font-weight: 550;
     font-size: 0.9em;
+    overflow-wrap: break-word;
+    white-space: normal;
     cursor: pointer;
 }
 
