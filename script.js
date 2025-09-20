@@ -44,10 +44,11 @@ function getFirstNWeeksOfMonth(year, month, count) {
     return [...weeks];
 }
 
-function fitText(text, targetHeight) {
+function fitText(text) {
     let fontSize = 20;
     text.style.fontSize = fontSize + "px";
 
+    const targetHeight = lunchItems[0].querySelector(".name-container").offsetHeight;
     const minFontSize = window.screen.width < 600 ? 8 : 12;
     while (text.offsetHeight > targetHeight && fontSize > minFontSize) {
         fontSize -= 0.5;
@@ -56,13 +57,12 @@ function fitText(text, targetHeight) {
 }
 
 function fitAllText() {
-    const targetHeight = lunchItems[0].querySelector(".name").offsetHeight;
     for (let i = 0; i < lunchItems.length; i++) {
         const lunchNameElement = lunchItems[i].querySelector(".name");
-        fitText(lunchNameElement, targetHeight);
+        fitText(lunchNameElement);
 
         const dinnerNameElement = dinnerItems[i].querySelector(".name");
-        fitText(dinnerNameElement, targetHeight);
+        fitText(dinnerNameElement);
     }
 }
 
@@ -118,7 +118,6 @@ function reload() {
     nextMonthButton.textContent = monthNames[getNextMonthNumber()] + " →";
 
     const weeks = getFirstNWeeksOfMonth(now.getFullYear(), selectedMonth, 5);
-    const targetHeight = lunchItems[0].querySelector(".name-container").offsetHeight;
     const emptyItem = {
         dinner: {
             name: "-",
@@ -146,14 +145,14 @@ function reload() {
 
         const lunchNameElement = lunchItems[i].querySelector(".name");
         lunchNameElement.textContent = `${dataItem.lunch.name}`;
-        fitText(lunchNameElement, targetHeight);
+        fitText(lunchNameElement);
         lunchNameElement.onclick = () => {
             return showPopup(week, dataItem.lunch, lunchItems[i].parentElement);
         }
 
         const dinnerNameElement = dinnerItems[i].querySelector(".name");
         dinnerNameElement.textContent = `${dataItem.dinner.name}`;
-        fitText(dinnerNameElement, targetHeight);
+        fitText(dinnerNameElement);
         dinnerNameElement.onclick = () => {
             return showPopup(week, dataItem.dinner, dinnerItems[i].parentElement);
         }
