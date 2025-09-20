@@ -172,7 +172,7 @@
     "18": {
         "dinner": {
             "name": "Linsgryta med naanbröd",
-            "notes": null
+            "notes": "Gör naanbrödet på pizzastål. Ha nigellafrön i."
         },
         "lunch": {
             "name": "Vegofärspaj (med lök och paprika) med creme fraiche",
@@ -346,7 +346,7 @@
         },
         "lunch": {
             "name": "Tofugryta med vitkål, broccoli och rotselleri",
-            "notes": null
+            "notes": "Baka tofun i ugnen."
         }
     },
     "36": {
@@ -362,7 +362,7 @@
     "37": {
         "dinner": {
             "name": "Shakshuka",
-            "notes": null
+            "notes": "800 ml krossade tomater. 2 ägg per portion."
         },
         "lunch": {
             "name": "Pasta med ost- och paprikasås",
@@ -372,7 +372,7 @@
     "38": {
         "dinner": {
             "name": "Ugnsbakat kycklingbröst med ris och sambalgräddsås",
-            "notes": null
+            "notes": "Tina kycklingen i kylen i saltat vatten över natten. Förvara kyckling som blir över i vatten i kylen."
         },
         "lunch": {
             "name": "Pastagratäng med köttbullar, ärtor, ost och grädde",
@@ -435,8 +435,8 @@
             "notes": null
         },
         "lunch": {
-            "name": "Pasta med morotsgryta",
-            "notes": null
+            "name": "Pasta med morot- och purjolöksgryta",
+            "notes": "Använd fullkornspasta."
         }
     },
     "45": {
@@ -446,7 +446,7 @@
         },
         "lunch": {
             "name": "Ugnspannkaka",
-            "notes": null
+            "notes": "Rivna morötter och lingon till."
         }
     },
     "46": {
@@ -462,7 +462,7 @@
     "47": {
         "dinner": {
             "name": "Ost- och spenatpaj",
-            "notes": null
+            "notes": "Ha mycket spenat i pajen."
         },
         "lunch": {
             "name": "Potatismos med bönor och ärtor stekta i olivolja och sambal",
