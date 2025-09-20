@@ -48,7 +48,7 @@ function fitText(text, targetHeight) {
     let fontSize = 20;
     text.style.fontSize = fontSize + "px";
 
-    const minFontSize = window.screen.width < 600 ? 9 : 12;
+    const minFontSize = window.screen.width < 600 ? 8 : 12;
     while (text.offsetHeight > targetHeight && fontSize > minFontSize) {
         fontSize -= 0.5;
         text.style.fontSize = fontSize + "px";
