@@ -169,6 +169,10 @@ button {
 }
 
 @media only screen and (max-width: 550px) {
+    body {
+        font-size: 22px;
+    }
+
     .item .name-container {
         height: 27px;
         max-height: 27px;
