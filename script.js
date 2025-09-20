@@ -99,16 +99,6 @@ function showPopup(week, data, listElement) {
     popup.querySelector("p").innerHTML = data.notes;
 }
 
-const getWeeksInMonth = (year, month) => {
-    const date = Temporal.PlainDate.from({
-        year,
-        month: month + 1,
-        day: 1
-    });
-
-    return date.daysInMonth == 31 ? 5 : 4;
-};
-
 function reload() {
     clearPopups();
 
@@ -118,17 +108,6 @@ function reload() {
     nextMonthButton.textContent = monthNames[getNextMonthNumber()] + " →";
 
     const weeks = getFirstNWeeksOfMonth(now.getFullYear(), selectedMonth, 5);
-    const emptyItem = {
-        dinner: {
-            name: "-",
-            notes: "-",
-        },
-        lunch: {
-            name: "-",
-            notes: "-",
-        },
-    };
-
     for (let i = 0; i < lunchItems.length; i++) {
         const week = weeks[i];
         const isEmptyWeek = i == weeks.length;
