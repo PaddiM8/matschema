@@ -2,521 +2,1074 @@
     "1": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         }
     },
     "2": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "Ärtbiffar med krossade pumpakärnor i med potatis och sås på kinesisk soja och grädde",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "ärtor",
+                "pumpakärnor",
+                "potatis",
+                "grädde"
+            ]
         }
     },
     "3": {
         "dinner": {
             "name": "Kyckling- och nudelsoppa (kycklingfärs eller lårfile)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                ["kycklingfärs", "kycklinglår"],
+                "äggnudlar",
+                "lök",
+                "morot"
+            ]
         },
         "lunch": {
             "name": "Pasta med spenat, ricotta och tomatsås (som cannelloni)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "spenat",
+                "ricotta",
+                ["krossade-tomater", "passerade-tomater"]
+            ]
         }
     },
     "4": {
         "dinner": {
             "name": "Hamburgare",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "blandfärs",
+                "tomat",
+                "isbergssallad",
+                "hamburgerost",
+                "majonnäs"
+            ]
         },
         "lunch": {
             "name": "Pastasås med ost och små tomater i",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "ost",
+                "tomat"
+            ]
         }
     },
     "5": {
         "dinner": {
             "name": "Soppa med köttfärs (anamma?), potatis, paprika, tomatpure, osv.",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                ["blandfärs", "vegofärs"],
+                "potatis",
+                "paprika"
+            ]
         },
         "lunch": {
             "name": "Kycklingkebabnugget-gryta med ris",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklingkebabnuggets",
+                "ris"
+            ]
         }
     },
     "6": {
         "dinner": {
             "name": "Kycklingburgare med brysselkål och grekisk yoghurt",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklingburgare",
+                "brysselkål",
+                "grekisk-yoghurt"
+            ]
         },
         "lunch": {
             "name": "Falafel med couscous och tomatsås",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "falafel",
+                "couscous",
+                "krossade-tomater"
+            ]
         }
     },
     "7": {
         "dinner": {
             "name": "Korv med bröd, rester",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "korv",
+                "korvbröd"
+            ]
         },
         "lunch": {
             "name": "Chili con carne",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "blandfärs",
+                ["vita-bönor", "borlottibönor"]
+            ]
         }
     },
     "8": {
         "dinner": {
             "name": "Spenatknödel med brynt smör och sallad gjord på keso, äpple och riven morot",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "potatis",
+                "spenat",
+                "keso",
+                "äpple",
+                "morot"
+            ]
         },
         "lunch": {
-            "name": "Kycklingfärs, currypulver, jalapeno med pasta",
-            "notes": null
+            "name": "Kycklingfärs, currypulver, jalapeno (på burk) med pasta",
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "kycklingfärs",
+                "jalapeno"
+            ]
         }
     },
     "9": {
         "dinner": {
             "name": "Stekt ris med chorizo och creme fraiche",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "ris",
+                "chorizo",
+                "creme-fraiche"
+            ]
         },
         "lunch": {
             "name": "Misomarinerad tofu med broccoli- och misosås",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "miso",
+                "tofu",
+                "broccoli",
+                "grädde"
+            ]
         }
     },
     "10": {
         "dinner": {
             "name": "Amerikanska pannkakor med blåbär",
-            "notes": "Ha 20-40% emmervete i smeten (fullkorn)"
+            "notes": "Ha 20-40% emmervete i smeten (fullkorn)",
+            "ingredients": [
+                "ägg",
+                "mjölk",
+                "emmervete",
+                "blåbär",
+                "grädde"
+            ]
         },
         "lunch": {
             "name": "Bratwurst med dampfnudeln och curryketchup (blanda ketchup med currypulver)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "bratwurst",
+                "dampfnudeln",
+                "ketchup"
+            ]
         }
     },
     "11": {
         "dinner": {
             "name": "Tacos",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "vegofärs",
+                "tomat",
+                "gurka",
+                "majs",
+                "tortilla",
+                "creme fraiche",
+                "tacokrydda"
+            ]
         },
         "lunch": {
             "name": "Seitan med ris och misosås",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "seitan",
+                "ris",
+                "mis",
+                "grädde"
+            ]
         }
     },
     "12": {
         "dinner": {
-            "name": "Broccoli- och spenatsoppa",
-            "notes": null
+            "name": "Broccoli- och spenatsoppa med brödbullar",
+            "notes": null,
+            "ingredients": [
+                "broccoli",
+                "spenat",
+                "grädde"
+            ]
         },
         "lunch": {
             "name": "Kycklingkebabnuggets med smörstekt apelsin och potatismos",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklingkebabnuggets",
+                "apelsin",
+                "potatis"
+            ]
         }
     },
     "13": {
         "dinner": {
             "name": "Thai red curry",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                ["kycklingfärs", "kycklinglår"],
+                "ris",
+                "paprika",
+                "kokosmjölk"
+            ]
         },
         "lunch": {
             "name": "Pasta med korvsås",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "korv"
+            ]
         }
     },
     "14": {
         "dinner": {
             "name": "Ugnsbakad gnocchi i tomatsås och mozzarella",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "gnocchi",
+                "krossade tomater",
+                "mozzarella"
+            ]
         },
         "lunch": {
-            "name": "Brysselkål med kycklingburgare och turkish yoghurt",
+            "name": "-",
             "notes": null
         }
     },
     "15": {
         "dinner": {
             "name": "Tombik döner",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kebab",
+                "tomat",
+                "isbergssallad",
+                "majonnäs"
+            ]
         },
         "lunch": {
             "name": "Rödbetsbiffar (med jordnötter i) med potatis och stuvad spenat",
-            "notes": "Gör jordnötssmör av hälften av jordnötterna"
+            "notes": "Gör jordnötssmör av hälften av jordnötterna",
+            "ingredients": [
+                "rödbetor",
+                "jordnötter",
+                "potatis",
+                "spenat"
+            ]
         }
     },
     "16": {
         "dinner": {
             "name": "Tortellini med tomat, mozzarella och olivolja",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "tortellini",
+                "tomat",
+                "mozzarella"
+            ]
         },
         "lunch": {
-            "name": "Pasta med ost- och broccolisås (och valnötter)",
-            "notes": null
+            "name": "Pasta med ost- och broccolisås (och hasselnötter)",
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "ost",
+                "broccoli",
+                "hasselnötter"
+            ]
         }
     },
     "17": {
         "dinner": {
             "name": "Rester",
-            "notes": null
+            "notes": null,
+            "ingredients": []
         },
         "lunch": {
             "name": "Gula ärtor och spenat i kokosmjölk kryddat med currypulver med ris",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "gula-ärtor",
+                "spenat",
+                "kokosmjölk",
+                "ris"
+            ]
         }
     },
     "18": {
         "dinner": {
             "name": "Linsgryta med naanbröd",
-            "notes": "Gör naanbrödet på pizzastål. Ha nigellafrön i."
+            "notes": "Gör naanbrödet på pizzastål. Ha nigellafrön i.",
+            "ingredients": [
+                "röda-linser",
+                "morot",
+                "lök",
+                "nigellafrön"
+            ]
         },
         "lunch": {
             "name": "Vegofärspaj (med lök och paprika) med creme fraiche",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "vegofärs",
+                "lök",
+                "paprika",
+                "creme fraiche"
+            ]
         }
     },
     "19": {
         "dinner": {
-            "name": "Äggnudlar i buljong med kokt ägg och majs",
-            "notes": null
+            "name": "Nudlar i buljong med kokt ägg och majs",
+            "notes": null,
+            "ingredients": [
+                "snabbnudlar",
+                "ägg",
+                "majs"
+            ]
         },
         "lunch": {
             "name": "Bakad potatis (ICA har storpack bakpotatis) med creme fraiche, majs och korv",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "bakad-potatis",
+                "creme-fraiche",
+                "majs",
+                "kryddkorv"
+            ]
         }
     },
     "20": {
         "dinner": {
             "name": "Ugnsbakat kycklingbröst (som salladskyckling) med pasta och någon dressing",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklingbröst",
+                "pasta",
+                "majonnäs"
+            ]
         },
         "lunch": {
             "name": "Ris/potatis med jordnöttsås (mjölk istället för kokosmjölk)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "potatis",
+                "jordnötter",
+                "mjölk",
+                "morot",
+                "lök",
+                "tomatpure"
+            ]
         }
     },
     "21": {
         "dinner": {
             "name": "Linsbollar med couscous och grekisk yoghurt",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "röda-linser",
+                "couscous",
+                "grekisk-yoghurt"
+            ]
         },
         "lunch": {
             "name": "Sheperd's pie",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "blandfärs",
+                "potatis",
+                "tomatpure",
+                "ärtor",
+                "morot",
+                "lök"
+            ]
         }
     },
     "22": {
         "dinner": {
             "name": "Spenatravioli i ostsås",
-            "notes": "600g mjöl"
+            "notes": "600g mjöl",
+            "ingredients": [
+                "spenat",
+                "ricotta",
+                "ägg",
+                "ost"
+            ]
         },
         "lunch": {
             "name": "Pierogi",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "potatis",
+                "grytbitar-nöt",
+                "lök",
+                "creme-fraiche"
+            ]
         }
     },
     "23": {
         "dinner": {
             "name": "Falafel i pitabröd",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "falafel",
+                "morot",
+                "ost",
+                "majonnäs"
+            ]
         },
         "lunch": {
             "name": "Kycklinglår med mango chutneysås och ris",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklinglår",
+                "mango-chutney",
+                "grädde",
+                "lök",
+                "morot",
+                "paprika",
+                "ris"
+            ]
         }
     },
     "24": {
         "dinner": {
             "name": "Havregrynsgröt med päron- och äpplemos, blåbär (svenska frysta), jordnöttsmör och hasselnötter",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "havregryn",
+                "päron",
+                "äpple",
+                "blåbär",
+                "jordnötter"
+            ]
         },
         "lunch": {
             "name": "Mercimek çorbası (linssoppa med morot och lök) med bröd",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "röda-linser",
+                "morot",
+                "lök",
+                "grädde"
+            ]
         }
     },
     "25": {
         "dinner": {
             "name": "Kokta ägg med brunt ris och dressing (och japansk sojasås?)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "ägg",
+                "brunt-ris",
+                "majonnäs"
+            ]
         },
         "lunch": {
             "name": "Grekiska biffar av vegofärs (t.ex. anamma formbar) med potatisgratäng och tzatziki",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "formbar-vegofärs",
+                ["potatis", "potatisgratäng"],
+                "gurka",
+                "vitlök",
+                "grekisk-yoghurt"
+            ]
         }
     },
     "26": {
         "dinner": {
             "name": "Hemmagjorda köttbullar med potatismos (halv vecka)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "blandfärs",
+                "grädde",
+                "potatis",
+                "lingon",
+                "kalvfond",
+                "brödsmulor"
+            ]
         },
         "lunch": {
             "name": "Ost- och fläskkorvpaj",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "ost",
+                "fläskkorv"
+            ]
         }
     },
     "27": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "Kycklingburgare i bröd",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklingburgare",
+                "hamburgerost",
+                "tomat",
+                "isbergssallad",
+                "majonnäs"
+            ]
         }
     },
     "28": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         }
     },
     "29": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         }
     },
     "30": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         }
     },
     "31": {
         "dinner": {
             "name": "Quesadillas",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "tortilla",
+                "ost",
+                ["borlottibönor", "svarta-bönor"]
+            ]
         },
         "lunch": {
             "name": "Tomatbaserad tortellinisoppa med spenat",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "krossade-tomater",
+                "lök",
+                "morot",
+                "tortellini",
+                "spenat"
+            ]
         }
     },
     "32": {
         "dinner": {
             "name": "Bönburgare med ris",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "svarta-bönor",
+                "ris"
+            ]
         },
         "lunch": {
             "name": "Farinata med stuvad spenat och tomat",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kikärtsmjöl",
+                "spenat",
+                "tomat"
+            ]
         }
     },
     "33": {
         "dinner": {
             "name": "Pasta- och broccolisoppa",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "broccoli",
+                "lök",
+                "morot",
+                "grädde"
+            ]
         },
         "lunch": {
             "name": "Quornfileer med ris",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "quornfileer",
+                "ris",
+                "grädde",
+                "lök",
+                "tomat"
+            ]
         }
     },
     "34": {
         "dinner": {
             "name": "Kebabrulle",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kebab",
+                "tomat",
+                "isbergssallad",
+                "majonnäs",
+                "kebabbröd"
+            ]
         },
         "lunch": {
             "name": "Ugnsbakad falukorv med stuvad potatis",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "falukorv",
+                "potatis"
+            ]
         }
     },
     "35": {
         "dinner": {
             "name": "Ärtsoppa med pannkakor",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "gula-ärtor",
+                "ägg",
+                "mjölk",
+                "grädde"
+            ]
         },
         "lunch": {
             "name": "Tofugryta med vitkål, broccoli och rotselleri",
-            "notes": "Baka tofun i ugnen."
+            "notes": "Baka tofun i ugnen.",
+            "ingredients": [
+                "tofu",
+                "vitkål",
+                "broccoli",
+                "rotselleri"
+            ]
         }
     },
     "36": {
         "dinner": {
             "name": "Piroger",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "blandfärs",
+                "paprika",
+                "tomat",
+                "gurka",
+                "majs",
+                "creme-fraiche"
+            ]
         },
         "lunch": {
             "name": "Falafelgryta med ris (garants falafel)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "falafel",
+                "ris",
+                "mjölk",
+                "morot",
+                "lök"
+            ]
         }
     },
     "37": {
         "dinner": {
             "name": "Shakshuka",
-            "notes": "800 ml krossade tomater. 2 ägg per portion."
+            "notes": "800 ml krossade tomater. 2 ägg per portion.",
+            "ingredients": [
+                "krossade-tomater",
+                "ägg",
+                "ris"
+            ]
         },
         "lunch": {
             "name": "Pasta med ost- och paprikasås",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "ost",
+                "paprika"
+            ]
         }
     },
     "38": {
         "dinner": {
             "name": "Ugnsbakat kycklingbröst med ris och sambalgräddsås",
-            "notes": "Tina kycklingen i kylen i saltat vatten över natten. Förvara kyckling som blir över i vatten i kylen."
+            "notes": "Ha broccoli till. Tina kycklingen i kylen i saltat vatten över natten. Förvara kyckling som blir över i vatten i kylen.",
+            "ingredients": [
+                "kycklingbröst",
+                "ris",
+                "grädde",
+                "broccoli"
+            ]
         },
         "lunch": {
             "name": "Pastagratäng med köttbullar, ärtor, ost och grädde",
-            "notes": null
+            "notes": "Scans färska köttbullar är bra och har rimligt pris.",
+            "ingredients": [
+                "pasta",
+                "köttbullar",
+                "ärtor",
+                "ost",
+                "grädde"
+            ]
         }
     },
     "39": {
         "dinner": {
             "name": "Tacopasta",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "vegofärs",
+                "pasta",
+                "tomat",
+                "gurka",
+                "majs",
+                "creme-fraiche",
+                "tacokrydda"
+            ]
         },
         "lunch": {
             "name": "Belugalinser i kokosmjölk",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "belugalinser",
+                "kokosmjölk",
+                "ris"
+            ]
         }
     },
     "40": {
         "dinner": {
             "name": "Borlottibönor och svarta bönor med sambal, spiskummin och krossade pumpakärnor med creme fraiche i tortilla",
-            "notes": "Stekta bönor osv. Stekt tortillabröd. Kan ha krossade linfrön också."
+            "notes": "Stekta bönor osv. Stekt tortillabröd. Kan ha krossade linfrön också.",
+            "ingredients": [
+                "borlottibönor",
+                "svarta-bönor",
+                "pumpakärnor",
+                "creme-fraiche",
+                "tortilla"
+            ]
         },
         "lunch": {
             "name": "Hackad chorizo med gnocchi i gräddig tomatsås",
-            "notes": "900 g korv, 1 kg gnocchi, 800 g finkrossade tomater"
+            "notes": "900 g korv, 1 kg gnocchi, 800 g finkrossade tomater",
+            "ingredients": [
+                ["chorizo", "chorizofärs"],
+                "gnocchi",
+                "krossade-tomater",
+                "grädde"
+            ]
         }
     },
     "41": {
         "dinner": {
             "name": "Nudlar med jordnötssås",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "äggnudlar",
+                "jordötter",
+                "kokosmjölk",
+                "minimajs"
+            ]
         },
         "lunch": {
             "name": "Potatis- och purjolöksoppa med bröd",
-            "notes": "Bröd: solroskärnor, emmer, råg, osv."
+            "notes": "Bröd: solroskärnor, emmer, råg, osv.",
+            "ingredients": [
+                "potatis",
+                "purjolök"
+            ]
         }
     },
     "42": {
         "dinner": {
             "name": "Tunnbrödsrulle med korv",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "tunnbröd",
+                "korv",
+                "potatis",
+                "bostongurka",
+                "majonnäs"
+            ]
         },
         "lunch": {
             "name": "Flygande jakob",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklingfärs",
+                "tomatpure",
+                "ris",
+                "banan",
+                "jordnötter"
+            ]
         }
     },
     "43": {
         "dinner": {
             "name": "Svarta bönor i tomatsås med färsk pasta",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "svarta-bönor",
+                "krossade-tomater",
+                "ägg",
+                "grädde"
+            ]
         },
         "lunch": {
             "name": "Korv stroganoff",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "falukorv",
+                "morot",
+                "lök",
+                "paprika",
+                "ris",
+                "grädde",
+                "creme-fraiche"
+            ]
         }
     },
     "44": {
         "dinner": {
             "name": "Pasta e fagioli (pasta- och bönsoppa)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "borlottibönor",
+                "lök",
+                "morot",
+                "rotselleri"
+            ]
         },
         "lunch": {
             "name": "Pasta med morot- och purjolöksgryta",
-            "notes": "Använd fullkornspasta."
+            "notes": "Använd fullkornspasta.",
+            "ingredients": [
+                "fullkornspasta",
+                "morot",
+                "purjolök",
+                "grädde"
+            ]
         }
     },
     "45": {
         "dinner": {
             "name": "Gnocchi med ost- och pumpakärnsås (krossade rostade pumpakärnor med några hela rostade)",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "gnocchi",
+                "ost",
+                "pumpakärnor"
+            ]
         },
         "lunch": {
             "name": "Ugnspannkaka",
-            "notes": "Rivna morötter och lingon till."
+            "notes": "Rivna morötter och lingon till.",
+            "ingredients": [
+                "ägg",
+                "morot",
+                "flässkorv",
+                "lingon"
+            ]
         }
     },
     "46": {
         "dinner": {
             "name": "Spaghetti med köttfärssås",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "spaghetti",
+                "blandfärs",
+                "morot",
+                "lök",
+                "rotselleri",
+                "krossade-tomater"
+            ]
         },
         "lunch": {
             "name": "Knödel med stuvad spenat och ärtbollar",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "potatis",
+                "spenat",
+                "gula-ärtor"
+            ]
         }
     },
     "47": {
         "dinner": {
             "name": "Ost- och spenatpaj",
-            "notes": "Ha mycket spenat i pajen."
+            "notes": "Ha mycket spenat i pajen.",
+            "ingredients": [
+                "ost",
+                "spenat"
+            ]
         },
         "lunch": {
             "name": "Potatismos med bönor och ärtor stekta i olivolja och sambal",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "potatis",
+                "bönor"
+            ]
         }
     },
     "48": {
         "dinner": {
             "name": "Kycklingrulle",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "kycklingkebab",
+                "tomat",
+                "isbergssallad",
+                "majonnäs",
+                "kebabrullebröd"
+            ]
         },
         "lunch": {
             "name": "Falukorv med stuvade makaroner",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "falukorv",
+                "makaroner",
+                "majs"
+            ]
         }
     },
     "49": {
         "dinner": {
             "name": "Pizza",
-            "notes": null
+            "notes": "Garants gräddost är billigast. Möjligtvis ICAs.",
+            "ingredients": [
+                "krossade-tomater",
+                "fläskkorv",
+                "gräddost",
+                "banan"
+            ]
         },
         "lunch": {
             "name": "Gula ärtor och spenat i kokosmjölk kryddat med currypulver med ris",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "gula-ärtor",
+                "spenat",
+                "kokosmjölk",
+                "ris"
+            ]
         }
     },
     "50": {
         "dinner": {
             "name": "Ugnsbakad pasta med kycklingfärs och broccoli i grädde",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "pasta",
+                "kycklingfärs",
+                "broccoli",
+                "grädde"
+            ]
         },
         "lunch": {
             "name": "Broccolibiffar med potatis och bruna bönor",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+                "broccoli",
+                "potatis",
+                "bruna-bönor",
+                "grädde"
+            ]
         }
     },
     "51": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         }
     },
     "52": {
         "dinner": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         },
         "lunch": {
             "name": "",
-            "notes": null
+            "notes": null,
+            "ingredients": [
+            ]
         }
     }
 }
