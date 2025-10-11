@@ -25,6 +25,9 @@
         "queries": [
             "\\bsmör\\b"
         ],
+        "exclusionQueries": [
+            "\\braps"
+        ],
         "maxUnitPrice": 100,
         "alwaysRelevant": true
     },
