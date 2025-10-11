@@ -142,15 +142,16 @@ public class ScraperService(
         int currentWeek
     )
     {
-        var matchedIngredients = new List<(string id, Ingredient value)>();
+        var matchedIngredients = new List<(string id, Ingredient value, int? relevantForWeek)>();
         foreach (var ingredient in ingredients)
         {
             var isMatch = ingredient
                 .Value
                 .Queries
                 .Any(query => Regex.Match(tjekOffer.Name, query, RegexOptions.IgnoreCase).Success);
-            if (isMatch && IngredientIsRelevant(ingredient.Key, ingredient.Value, mealPlan, currentWeek))
-                matchedIngredients.Add((ingredient.Key, ingredient.Value));
+            var (isRelevant, relevantForWeek) = IngredientIsRelevant(ingredient.Key, ingredient.Value, mealPlan, currentWeek);
+            if (isMatch && isRelevant)
+                matchedIngredients.Add((ingredient.Key, ingredient.Value, relevantForWeek));
         }
 
         if (matchedIngredients.Count == 0)
@@ -170,7 +171,7 @@ public class ScraperService(
             return [];
 
         var result = new List<ScrapedOffer>();
-        foreach (var (ingredientId, ingredient) in matchedIngredients)
+        foreach (var (ingredientId, ingredient, relevantForWeek) in matchedIngredients)
         {
             if (ingredient.MaxUnitPrice.HasValue && offer.UnitPrice > ingredient.MaxUnitPrice.Value)
                 continue;
@@ -186,6 +187,7 @@ public class ScraperService(
                 PublicationUrl = $"https://ereklamblad.se/{storeOption.Name}?publication={publicationId}",
                 Price = offer.Price,
                 Savings = offer.Savings,
+                RelevantForWeek = relevantForWeek,
             };
 
             result.Add(scrapedOffer);
@@ -194,7 +196,7 @@ public class ScraperService(
         return result;
     }
 
-    private bool IngredientIsRelevant(
+    private (bool isRelevant, int? relevantForWeek) IngredientIsRelevant(
         string ingredientId,
         Ingredient ingredient,
         Dictionary<int, MealPlanWeek> mealPlan,
@@ -202,7 +204,7 @@ public class ScraperService(
     )
     {
         if (ingredient.AlwaysRelevant)
-            return true;
+            return (true, null);
 
         int iterations = 0;
         var selectedWeekNumber = currentWeek;
@@ -213,12 +215,12 @@ public class ScraperService(
                 var isInLunch = mealPlanWeek.Lunch.Ingredients.Any(x => x.Contains(ingredientId));
                 var isInDinner = mealPlanWeek.Dinner.Ingredients.Any(x => x.Contains(ingredientId));
                 if (isInLunch || isInDinner)
-                    return true;
+                    return (true, selectedWeekNumber);
             }
 
             iterations++;
             if (iterations > ingredient.MaxWeeksBuyInAdvance)
-                return false;
+                return (false, null);
 
             selectedWeekNumber++;
             if (selectedWeekNumber > 52)

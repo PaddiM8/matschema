@@ -18,7 +18,14 @@ public class NullableDecimalConverter : JsonConverter<decimal?>
 
     public override void Write(Utf8JsonWriter writer, decimal? value, JsonSerializerOptions options)
     {
-        writer.WriteNumberValue(value ?? 0);
+        if (value.HasValue)
+        {
+            writer.WriteNumberValue(value.Value);
+        }
+        else
+        {
+            writer.WriteNullValue();
+        }
     }
 }
 

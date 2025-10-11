@@ -19,4 +19,6 @@ public class ScrapedOffer
     public decimal? Price { get; init; }
 
     public decimal? Savings { get; init; }
+
+    public int? RelevantForWeek { get; init; }
 }

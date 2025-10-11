@@ -251,6 +251,22 @@ button {
     margin: 0;
 }
 
+.offer .name {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4em;
+}
+
+.offer .week-tag {
+    padding: 0.3em 0.5em;
+    border-radius: 0.65em;
+
+    background-color: #424242;
+    color: white;
+    font-size: 0.5em;
+    font-weight: 550;
+}
+
 .offer .price {
     font-size: 0.8em;
 }

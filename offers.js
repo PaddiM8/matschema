@@ -24,9 +24,16 @@ function buildOfferList(store, offers) {
 
     for (const offer of offers) {
         const price = offer.unitPrice.toString().replace(".", ",");
+        const weekTag = offer.relevantForWeek
+            ? `<span class="week-tag">v${offer.relevantForWeek}</span>`
+            : "";
+
         storePane.insertAdjacentHTML("beforeend", `
             <div class="offer">
-                <h4>${offer.name}</h4>
+                <div class="name">
+                    <h4>${offer.name}</h4>
+                    ${weekTag}
+                </div>
                 <div class="content">
                     <div class="text">
                         <span class="price">${price} kr/${prettifyBaseUnit(offer.baseUnit)}</span>
