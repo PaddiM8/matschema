@@ -182,7 +182,7 @@ public class ScraperService(
             var isDescriptionMatch = ingredient
                 .DescriptionQueries
                 .Any(query => Regex.Match(offer.Description, query, RegexOptions.IgnoreCase).Success);
-            if (!isDescriptionMatch)
+            if (ingredient.DescriptionQueries.Count > 0 && !isDescriptionMatch)
                 continue;
 
             var scrapedOffer = new ScrapedOffer

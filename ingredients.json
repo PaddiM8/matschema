@@ -16,14 +16,14 @@
     "kebab": {
         "queries": [
             "görans",
-            "\bkebab\b"
+            "\\bkebab\\b"
         ],
         "maxUnitPrice": 120,
         "maxWeeksBuyInAdvance": 12
     },
     "smör": {
         "queries": [
-            "\bsmör\b"
+            "\\bsmör\\b"
         ],
         "maxUnitPrice": 100,
         "alwaysRelevant": true
@@ -34,8 +34,8 @@
             "präst",
             "herrgård",
             "gräddost",
-            "\bost\b",
-            "\bcheddar\b",
+            "\\bost\\b",
+            "\\bcheddar\\b",
             "hushållsost",
             "ostklassiker"
         ],
@@ -65,50 +65,50 @@
     },
     "paprika": {
         "queries": [
-            "\bpaprika\b"
+            "\\bpaprika\\b"
         ],
         "maxUnitPrice": 45
     },
     "ricotta": {
         "queries": [
-            "\bricotta\b"
+            "\\bricotta\\b"
         ]
     },
     "grädde": {
         "queries": [
-            "\bgrädde\b",
-            "\bvispgrädde\b"
+            "\\bgrädde\\b",
+            "\\bvispgrädde\\b"
         ]
     },
     "creme-fraiche": {
         "queries": [
-            "\bcremefraiche\b",
-            "\bcrème fraiche\b"
+            "\\bcremefraiche\\b",
+            "\\bcrème fraiche\\b"
         ]
     },
     "falafel": {
         "queries": [
-            "\bfalafel\b",
-            "\bärtbollar\b"
+            "\\bfalafel\\b",
+            "\\bärtbollar\\b"
         ]
     },
     "tomat": {
         "queries": [
-            "\btomat\b",
-            "tomater\b"
+            "\\btomat\\b",
+            "tomater\\b"
         ],
         "maxUnitPrice": 50
     },
     "tortilla": {
         "queries": [
-            "\btortilla\b",
-            "tortillabröd\b"
+            "\\btortilla\\b",
+            "tortillabröd\\b"
         ],
         "maxWeeksBuyInAdvance": 4
     },
     "tofu": {
         "queries": [
-            "\btofu\b"
+            "\\btofu\\b"
         ],
         "maxWeeksBuyInAdvance": 2
     },
