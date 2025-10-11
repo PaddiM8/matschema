@@ -23,7 +23,6 @@ function buildOfferList(store, offers) {
     storePane.appendChild(header);
 
     for (const offer of offers) {
-        const price = offer.unitPrice.toString().replace(".", ",");
         const weekTag = offer.relevantForWeek
             ? `<span class="week-tag">v${offer.relevantForWeek}</span>`
             : "";
@@ -36,7 +35,7 @@ function buildOfferList(store, offers) {
                 </div>
                 <div class="content">
                     <div class="text">
-                        <span class="price">${price} kr/${prettifyBaseUnit(offer.baseUnit)}</span>
+                        <span class="price">${prettifyPrice(offer.unitPrice)} kr/${prettifyBaseUnit(offer.baseUnit)}</span>
                         <p>${offer.description}</p>
                     </div>
                     <a class="image-link" href="${offer.publicationUrl}" target="_blank"><img src="${offer.imageUrl}"></a>
@@ -44,6 +43,17 @@ function buildOfferList(store, offers) {
             </div>
         `);
     }
+}
+
+function prettifyPrice(price) {
+    price = price.toString().replace(".", ",");
+
+    const parts = price.split(",");
+    if (parts.length == 2 && parts[1].length == 1) {
+        return price + "0";
+    }
+
+    return price;
 }
 
 function prettifyBaseUnit(baseUnit) {
