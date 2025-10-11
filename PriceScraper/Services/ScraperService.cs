@@ -149,7 +149,11 @@ public class ScraperService(
                 .Value
                 .Queries
                 .Any(query => Regex.Match(tjekOffer.Name, query, RegexOptions.IgnoreCase).Success);
-            if (!isMatch)
+            var isExclusionMatch = ingredient
+                .Value
+                .ExclusionQueries
+                .Any(query => Regex.Match(tjekOffer.Name, query, RegexOptions.IgnoreCase).Success);
+            if (!isMatch || (ingredient.Value.ExclusionQueries.Count > 0 && isExclusionMatch))
                 continue;
 
             var (isRelevant, relevantForWeek) = IngredientIsRelevant(ingredient.Key, ingredient.Value, mealPlan, currentWeek);
@@ -228,7 +232,7 @@ public class ScraperService(
             }
 
             iterations++;
-            if (iterations > ingredient.MaxWeeksBuyInAdvance)
+            if (!ingredient.MaxWeeksBuyInAdvance.HasValue || iterations > ingredient.MaxWeeksBuyInAdvance)
                 return (false, null);
 
             selectedWeekNumber++;
