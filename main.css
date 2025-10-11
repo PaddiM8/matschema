@@ -179,3 +179,63 @@ button {
         max-height: 27px;
     }
 }
+
+.offers-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 4em;
+}
+
+.offers-header {
+    display: block;
+    width: 100%;
+    max-width: 22.5em;
+    margin-bottom: 0.4em;
+    color: white;
+}
+
+#offers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.store {
+    width: 100%;
+    max-width: 45em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.75em;
+}
+
+.store-name {
+    margin: 0;
+}
+
+.offer {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0.8em 0;
+}
+
+.offer:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.offer h4 {
+    display: block;
+    padding-bottom: 0.2em;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.offer .price {
+    font-size: 0.8em;
+}
+
+.offer p {
+    font-size: 0.7em;
+    margin-bottom: 0;
+}

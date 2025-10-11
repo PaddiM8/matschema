@@ -1,0 +1,61 @@
+{
+    "blandfärs": {
+        "queries": [
+            "blandfärs"
+        ],
+        "maxUnitPrice": 99,
+        "maxWeeksBuyInAdvance": 4
+    },
+    "kycklingfärs": {
+        "queries": [
+            "kycklingfärs"
+        ],
+        "maxUnitPrice": 99,
+        "maxWeeksBuyInAdvance": 4
+    },
+    "kebab": {
+        "queries": [
+            "görans",
+            "\bkebab\b"
+        ],
+        "maxUnitPrice": 120,
+        "maxWeeksBuyInAdvance": 12
+    },
+    "smör": {
+        "queries": [
+            "\bsmör\b"
+        ],
+        "maxUnitPrice": 100,
+        "alwaysRelevant": true
+    },
+    "ost": {
+        "queries": [
+            "familjefavoriter",
+            "präst",
+            "herrgård",
+            "gräddost",
+            "\bost\b",
+            "\bcheddar\b",
+            "hushållsost",
+            "ostklassiker"
+        ],
+        "maxUnitPrice": 90,
+        "alwaysRelevant": true
+    },
+    "kryddkorv": {
+        "queries": [
+            "kryddkorv",
+            "chorizo",
+            "kabanoss"
+        ],
+        "maxUnitPrice": 115,
+        "maxWeeksBuyInAdvance": 6
+    },
+    "olivolja": {
+        "queries": [
+            "olivolja"
+        ],
+        "maxUnitPrice": 160,
+        "alwaysRelevant": true
+    }
+}
