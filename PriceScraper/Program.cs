@@ -7,6 +7,7 @@ using Quartz;
 using Quartz.Impl;
 
 var builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddSystemd();
 builder.Services
     .AddHttpClient("EreklambladClient", client =>
     {
