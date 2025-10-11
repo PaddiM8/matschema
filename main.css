@@ -213,6 +213,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 0.6em;
+    padding-bottom: 2em;
 }
 
 .store {
