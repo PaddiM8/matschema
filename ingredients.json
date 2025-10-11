@@ -48,6 +48,7 @@
     "kryddkorv": {
         "queries": [
             "kryddkorv",
+            "kryddiga korvar",
             "chorizo",
             "kabanoss"
         ],
@@ -140,12 +141,14 @@
     "dampfnudeln": {
         "queries": [
             "dampfnudeln",
-            "schumpfnudeln"
+            "schumpfnudeln",
+            "färsk pasta"
         ],
         "descriptionQueries": [
             "dampfnudeln",
             "schumpfnudeln"
         ],
+        "limitedToStores": ["Lidl"],
         "maxWeeksBuyInAdvance": 12
     }
 }

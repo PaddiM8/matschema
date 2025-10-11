@@ -145,15 +145,18 @@ public class ScraperService(
         var matchedIngredients = new List<(string id, Ingredient value, int? relevantForWeek)>();
         foreach (var ingredient in ingredients)
         {
+            if (ingredient.Value.LimitedToStores?.Count > 0 && ingredient.Value.LimitedToStores?.Contains(storeOption.Name) is false)
+                continue;
+
             var isMatch = ingredient
                 .Value
                 .Queries
                 .Any(query => Regex.Match(tjekOffer.Name, query, RegexOptions.IgnoreCase).Success);
             var isExclusionMatch = ingredient
                 .Value
-                .ExclusionQueries
-                .Any(query => Regex.Match(tjekOffer.Name, query, RegexOptions.IgnoreCase).Success);
-            if (!isMatch || (ingredient.Value.ExclusionQueries.Count > 0 && isExclusionMatch))
+                .ExclusionQueries?
+                .Any(query => Regex.Match(tjekOffer.Name, query, RegexOptions.IgnoreCase).Success) is true;
+            if (!isMatch || (ingredient.Value.ExclusionQueries?.Count > 0 && isExclusionMatch))
                 continue;
 
             var (isRelevant, relevantForWeek) = IngredientIsRelevant(ingredient.Key, ingredient.Value, mealPlan, currentWeek);
@@ -184,9 +187,9 @@ public class ScraperService(
                 continue;
 
             var isDescriptionMatch = ingredient
-                .DescriptionQueries
-                .Any(query => Regex.Match(offer.Description, query, RegexOptions.IgnoreCase).Success);
-            if (ingredient.DescriptionQueries.Count > 0 && !isDescriptionMatch)
+                .DescriptionQueries?
+                .Any(query => Regex.Match(offer.Description, query, RegexOptions.IgnoreCase).Success) is true;
+            if (ingredient.DescriptionQueries?.Count > 0 && !isDescriptionMatch)
                 continue;
 
             var scrapedOffer = new ScrapedOffer

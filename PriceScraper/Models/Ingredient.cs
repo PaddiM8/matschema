@@ -4,9 +4,11 @@ public class Ingredient
 {
     public required List<string> Queries { get; init; }
 
-    public List<string> ExclusionQueries { get; init; } = [];
+    public List<string>? ExclusionQueries { get; init; }
 
-    public List<string> DescriptionQueries { get; init; } = [];
+    public List<string>? DescriptionQueries { get; init; }
+
+    public List<string>? LimitedToStores { get; init; }
 
     public bool AlwaysRelevant { get; init; }
 
