@@ -58,7 +58,7 @@ builder.Services.AddQuartz(configurator =>
         opts
             .ForJob(jobKey)
             .WithIdentity("ScraperTrigger")
-            .WithSchedule(CronScheduleBuilder.DailyAtHourAndMinute(15, 0))
+            .WithSchedule(CronScheduleBuilder.DailyAtHourAndMinute(7, 0))
     );
 });
 builder.Services.AddQuartzHostedService();
