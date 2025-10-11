@@ -58,6 +58,20 @@ button {
     cursor: pointer;
 }
 
+.nav-link {
+    position: absolute;
+    top: 0.6em;
+    right: 0.6em;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.offers-link:hover {
+    text-decoration: underline;
+}
+
 .lunch-list {
     grid-area: lunch-list;
 }
