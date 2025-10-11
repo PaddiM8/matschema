@@ -218,6 +218,12 @@ button {
     padding: 0.8em 0;
 }
 
+.offer .content {
+    display: flex;
+    gap: 0.4em;
+    width: 100%;
+}
+
 .offer:last-child {
     border-bottom: 0;
     padding-bottom: 0;
@@ -238,4 +244,13 @@ button {
 .offer p {
     font-size: 0.7em;
     margin-bottom: 0;
+}
+
+.offer .image-link {
+    margin-left: auto;
+}
+
+.offer img {
+    width: auto;
+    height: 3.5em;
 }

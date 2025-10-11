@@ -27,8 +27,13 @@ function buildOfferList(store, offers) {
         storePane.insertAdjacentHTML("beforeend", `
             <div class="offer">
                 <h4>${offer.name}</h4>
-                <span class="price">${price} kr/${prettifyBaseUnit(offer.baseUnit)}</span>
-                <p>${offer.description}</p>
+                <div class="content">
+                    <div class="text">
+                        <span class="price">${price} kr/${prettifyBaseUnit(offer.baseUnit)}</span>
+                        <p>${offer.description}</p>
+                    </div>
+                    <a class="image-link" href="${offer.publicationUrl}" target="_blank"><img src="${offer.imageUrl}"></a>
+                </div>
             </div>
         `);
     }
