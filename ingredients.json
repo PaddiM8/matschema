@@ -57,5 +57,92 @@
         ],
         "maxUnitPrice": 160,
         "alwaysRelevant": true
+    },
+    "gurka": {
+        "queries": [
+            "gurka"
+        ]
+    },
+    "paprika": {
+        "queries": [
+            "\bpaprika\b"
+        ],
+        "maxUnitPrice": 45
+    },
+    "ricotta": {
+        "queries": [
+            "\bricotta\b"
+        ]
+    },
+    "grädde": {
+        "queries": [
+            "\bgrädde\b",
+            "\bvispgrädde\b"
+        ]
+    },
+    "creme-fraiche": {
+        "queries": [
+            "\bcremefraiche\b",
+            "\bcrème fraiche\b"
+        ]
+    },
+    "falafel": {
+        "queries": [
+            "\bfalafel\b",
+            "\bärtbollar\b"
+        ]
+    },
+    "tomat": {
+        "queries": [
+            "\btomat\b",
+            "tomater\b"
+        ],
+        "maxUnitPrice": 50
+    },
+    "tortilla": {
+        "queries": [
+            "\btortilla\b",
+            "tortillabröd\b"
+        ],
+        "maxWeeksBuyInAdvance": 4
+    },
+    "tofu": {
+        "queries": [
+            "\btofu\b"
+        ],
+        "maxWeeksBuyInAdvance": 2
+    },
+    "kycklingkebabnuggets": {
+        "queries": [
+            "chicken kebab",
+            "kycklingdelar"
+        ],
+        "maxUnitPrice": 80,
+        "maxWeeksBuyInAdvance": 8
+    },
+    "blåbär": {
+        "queries": [
+            "blåbär"
+        ],
+        "maxUnitPrice": 75,
+        "maxWeeksBuyInAdvance": 8
+    },
+    "bratwurst": {
+        "queries": [
+            "bratwurst"
+        ],
+        "maxUnitPrice": 105,
+        "maxWeeksBuyInAdvance": 12
+    },
+    "dampfnudeln": {
+        "queries": [
+            "dampfnudeln",
+            "schumpfnudeln"
+        ],
+        "descriptionQueries": [
+            "dampfnudeln",
+            "schumpfnudeln"
+        ],
+        "maxWeeksBuyInAdvance": 12
     }
 }

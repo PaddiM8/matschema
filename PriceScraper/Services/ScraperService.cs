@@ -149,8 +149,11 @@ public class ScraperService(
                 .Value
                 .Queries
                 .Any(query => Regex.Match(tjekOffer.Name, query, RegexOptions.IgnoreCase).Success);
+            if (!isMatch)
+                continue;
+
             var (isRelevant, relevantForWeek) = IngredientIsRelevant(ingredient.Key, ingredient.Value, mealPlan, currentWeek);
-            if (isMatch && isRelevant)
+            if (isRelevant)
                 matchedIngredients.Add((ingredient.Key, ingredient.Value, relevantForWeek));
         }
 
@@ -174,6 +177,12 @@ public class ScraperService(
         foreach (var (ingredientId, ingredient, relevantForWeek) in matchedIngredients)
         {
             if (ingredient.MaxUnitPrice.HasValue && offer.UnitPrice > ingredient.MaxUnitPrice.Value)
+                continue;
+
+            var isDescriptionMatch = ingredient
+                .DescriptionQueries
+                .Any(query => Regex.Match(offer.Description, query, RegexOptions.IgnoreCase).Success);
+            if (!isDescriptionMatch)
                 continue;
 
             var scrapedOffer = new ScrapedOffer
