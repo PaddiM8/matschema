@@ -42,7 +42,7 @@
             "hushållsost",
             "ostklassiker"
         ],
-        "maxUnitPrice": 90,
+        "maxUnitPrice": 100,
         "alwaysRelevant": true
     },
     "kryddkorv": {
@@ -150,5 +150,42 @@
         ],
         "limitedToStores": ["Lidl"],
         "maxWeeksBuyInAdvance": 12
+    },
+    "vegofärs": {
+        "queries": [
+            "anamma",
+            "vegofärs",
+            "sojafärs"
+        ],
+        "maxWeeksBuyInAdvance": 2
+    },
+    "kycklinglår": {
+        "queries": [
+            "kycklinglår"
+        ],
+        "maxUnitPrice": 89,
+        "maxWeeksBuyInAdvance": 3
+    },
+    "kokosmjölk": {
+        "queries": [
+            "kokosmjölk"
+        ],
+        "maxUnitPrice": 50,
+        "maxWeeksBuyInAdvance": 12
+    },
+    "hamburgerost": {
+        "queries": [
+            "hamburgerost",
+            "burger cheese",
+            "burger cheddar"
+        ],
+        "alwaysRelevant": true
+    },
+    "kebabrullebröd": {
+        "queries": [
+            "kebabrullebröd"
+        ],
+        "maxUnitPrice": 50,
+        "maxWeeksBuyInAdvance": 8
     }
 }
