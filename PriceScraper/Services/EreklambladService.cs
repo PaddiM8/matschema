@@ -5,16 +5,16 @@ using PriceScraper.Models;
 
 namespace PriceScraper.Services;
 
-public class EreklamBladService(
+public class EreklambladService(
     IHttpClientFactory httpClientFactory,
     JsonSerializerOptions serializerOptions,
-    ILogger<EreklamBladService> logger,
+    ILogger<EreklambladService> logger,
     IHostEnvironment environment
 )
 {
     private readonly IHttpClientFactory _httpClientFactory = httpClientFactory;
     private readonly JsonSerializerOptions _serializerOptions = serializerOptions;
-    private readonly ILogger<EreklamBladService> _logger = logger;
+    private readonly ILogger<EreklambladService> _logger = logger;
     private readonly IHostEnvironment _environment = environment;
 
     public async Task<T?> QueryAsync<T>(object query)

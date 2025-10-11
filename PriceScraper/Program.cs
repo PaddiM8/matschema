@@ -38,7 +38,7 @@ serializerOptions.Converters.Add(new NullableDecimalConverter());
 builder.Services.AddSingleton(serializerOptions);
 
 builder.Services.AddTransient<ScraperService>();
-builder.Services.AddTransient<EreklamBladService>();
+builder.Services.AddTransient<EreklambladService>();
 builder.Services.AddQuartz(configurator =>
 {
     var jobKey = new JobKey("ScraperJob");

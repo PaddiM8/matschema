@@ -12,6 +12,10 @@ public class ScrapedOffer
 
     public required string BaseUnit { get; init; }
 
+    public required string PublicationUrl { get; init; }
+
+    public string? ImageUrl { get; init; }
+
     public decimal? Price { get; init; }
 
     public decimal? Savings { get; init; }

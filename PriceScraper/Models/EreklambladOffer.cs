@@ -6,6 +6,7 @@ public record EreklambladOffer(
     string Description,
     decimal UnitPrice,
     string BaseUnit,
+    string? Image,
     decimal? Price,
     decimal? Savings
 );

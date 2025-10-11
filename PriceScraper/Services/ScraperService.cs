@@ -9,14 +9,14 @@ using PriceScraper.Models;
 namespace PriceScraper.Services;
 
 public class ScraperService(
-    EreklamBladService ereklamBladService,
+    EreklambladService ereklambladService,
     IConfiguration configuration,
     IHttpClientFactory httpClientFactory,
     JsonSerializerOptions serializerOptions,
     ILogger<ScraperService> logger
 )
 {
-    private readonly EreklamBladService _ereklamBladService = ereklamBladService;
+    private readonly EreklambladService _ereklamBladService = ereklambladService;
     private readonly IConfiguration _configuration = configuration;
     private readonly IHttpClientFactory _httpClientFactory = httpClientFactory;
     private readonly JsonSerializerOptions _serializerOptions = serializerOptions;
@@ -112,7 +112,15 @@ public class ScraperService(
             foreach (var hotspot in pageHotspots)
             {
                 _logger.LogTrace("Resolving hotspot {HotspotName}", hotspot.Offer.Name);
-                var resolvedOffers = await ResolveOffer(hotspot.Offer, ingredients, mealPlan, currentWeek);
+                var resolvedOffers = await ResolveOffer(
+                    storeOption,
+                    publication.Id,
+                    hotspot.Offer,
+                    ingredients,
+                    mealPlan,
+                    currentWeek
+                );
+
                 if (resolvedOffers.Count > 0)
                     _logger.LogTrace("Resolved offers: {OfferNames}", string.Join(", ", resolvedOffers.Select(x => x.Name)));
 
@@ -126,6 +134,8 @@ public class ScraperService(
     }
 
     private async Task<List<ScrapedOffer>> ResolveOffer(
+        StoreOption storeOption,
+        string publicationId,
         TjekOffer tjekOffer,
         Dictionary<string, Ingredient> ingredients,
         Dictionary<int, MealPlanWeek> mealPlan,
@@ -172,6 +182,8 @@ public class ScraperService(
                 Description = offer.Description,
                 UnitPrice = offer.UnitPrice,
                 BaseUnit = offer.BaseUnit,
+                ImageUrl = offer.Image,
+                PublicationUrl = $"https://ereklamblad.se/{storeOption.Name}?publication={publicationId}",
                 Price = offer.Price,
                 Savings = offer.Savings,
             };
