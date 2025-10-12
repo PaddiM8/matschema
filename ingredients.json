@@ -187,5 +187,13 @@
         ],
         "maxUnitPrice": 50,
         "maxWeeksBuyInAdvance": 8
+    },
+    "ben-and-jerry": {
+        "queries": [
+            "ben & jerry",
+            "ben and jerry"
+        ],
+        "maxUnitPrice": 45,
+        "alwaysRelevant": true
     }
 }
