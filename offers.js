@@ -46,6 +46,7 @@ function buildOfferList(store, offers) {
 }
 
 function prettifyPrice(price) {
+    price = Math.round(price * 100) / 100;
     price = price.toString().replace(".", ",");
 
     const parts = price.split(",");
