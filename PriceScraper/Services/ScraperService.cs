@@ -226,6 +226,10 @@ public class ScraperService(
         var selectedWeekNumber = currentWeek;
         while (true)
         {
+            selectedWeekNumber++;
+            if (selectedWeekNumber > 52)
+                selectedWeekNumber = 1;
+
             if (mealPlan.TryGetValue(selectedWeekNumber, out var mealPlanWeek))
             {
                 var isInLunch = mealPlanWeek.Lunch.Ingredients.Any(x => x.Contains(ingredientId));
@@ -237,10 +241,6 @@ public class ScraperService(
             iterations++;
             if (!ingredient.MaxWeeksBuyInAdvance.HasValue || iterations > ingredient.MaxWeeksBuyInAdvance)
                 return (false, null);
-
-            selectedWeekNumber++;
-            if (selectedWeekNumber > 52)
-                selectedWeekNumber = 1;
         }
     }
 }
