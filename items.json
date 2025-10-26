@@ -15,9 +15,12 @@
     },
     "2": {
         "dinner": {
-            "name": "",
+            "name": "Kebab med pasta och sås gjord på creme fraiche, fisksås och spiskummin",
             "notes": null,
             "ingredients": [
+                "kebab",
+                "pasta",
+                "creme-fraiche"
             ]
         },
         "lunch": {
