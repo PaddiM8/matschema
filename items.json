@@ -1049,15 +1049,22 @@
     },
     "51": {
         "dinner": {
-            "name": "",
-            "notes": null,
+            "name": "Pljeskavica",
+            "notes": "Balkanburgare i bröd medf tomat, ajvar och smetana",
             "ingredients": [
+                "blandfärs",
+                "ajvar",
+                "tomat",
+                "smetana"
             ]
         },
         "lunch": {
-            "name": "",
+            "name": "Tofu i sambal- och tahinisås med ris",
             "notes": null,
             "ingredients": [
+                "tofu",
+                "sesamfrön",
+                "ris"
             ]
         }
     },
