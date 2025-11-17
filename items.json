@@ -965,19 +965,19 @@
     },
     "47": {
         "dinner": {
-            "name": "Ost- och spenatpaj",
-            "notes": "Ha mycket spenat i pajen.",
-            "ingredients": [
-                "ost",
-                "spenat"
-            ]
-        },
-        "lunch": {
             "name": "Potatismos med bönor och ärtor stekta i olivolja och sambal",
             "notes": null,
             "ingredients": [
                 "potatis",
                 "bönor"
+            ]
+        },
+        "lunch": {
+            "name": "Ost- och spenatpaj",
+            "notes": "Ha mycket spenat i pajen.",
+            "ingredients": [
+                "ost",
+                "spenat"
             ]
         }
     },
