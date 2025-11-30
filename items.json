@@ -330,13 +330,12 @@
             "ingredients": []
         },
         "lunch": {
-            "name": "Gula ärtor och spenat i kokosmjölk med ris",
-            "notes": "Med currypulver",
+            "name": "Linsbollar med couscous och grekisk yoghurt",
+            "notes": null,
             "ingredients": [
-                "gula-ärtor",
-                "spenat",
-                "kokosmjölk",
-                "ris"
+                "röda linjser",
+                "couscous",
+                "grekisk yoghurt"
             ]
         }
     },
