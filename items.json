@@ -1015,8 +1015,8 @@
             ]
         },
         "lunch": {
-            "name": "Gula ärtor och spenat i kokosmjölk kryddat med currypulver med ris",
-            "notes": null,
+            "name": "Gula ärtor och spenat i kokosmjölk med ris",
+            "notes": "Currypulver.",
             "ingredients": [
                 "gula-ärtor",
                 "spenat",
