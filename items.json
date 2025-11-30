@@ -330,8 +330,8 @@
             "ingredients": []
         },
         "lunch": {
-            "name": "Gula ärtor och spenat i kokosmjölk kryddat med currypulver med ris",
-            "notes": null,
+            "name": "Gula ärtor och spenat i kokosmjölk med ris",
+            "notes": "Med currypulver",
             "ingredients": [
                 "gula-ärtor",
                 "spenat",
@@ -899,7 +899,7 @@
     "44": {
         "dinner": {
             "name": "Pasta e fagioli (pasta- och bönsoppa)",
-            "notes": "En tub tomatpuré. Borlottibönor.",
+            "notes": "En tub tomatpuré. 500g borlottibönor. Lite sambal.",
             "ingredients": [
                 "pasta",
                 "borlottibönor",
@@ -922,7 +922,7 @@
     "45": {
         "dinner": {
             "name": "Gnocchi med ost- och pumpakärnsås (krossade rostade pumpakärnor med några hela rostade)",
-            "notes": null,
+            "notes": "1,5 kg gnocchi. Helst lite västerbottenost (men kan blanda med annan, behövs inte så mycket för att göra skillnad).",
             "ingredients": [
                 "gnocchi",
                 "ost",
@@ -965,7 +965,7 @@
     },
     "47": {
         "dinner": {
-            "name": "Potatismos med bönor och ärtor stekta i olivolja och sambal",
+            "name": "Potatismos med bönor, ärtor och sambal i olivolja",
             "notes": null,
             "ingredients": [
                 "potatis",
