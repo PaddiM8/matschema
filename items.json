@@ -69,12 +69,11 @@
             ]
         },
         "lunch": {
-            "name": "Pastasås med ost och små tomater i",
+            "name": "Pasta med korvsås",
             "notes": null,
             "ingredients": [
                 "pasta",
-                "ost",
-                "tomat"
+                "korv"
             ]
         }
     },
@@ -257,11 +256,12 @@
             ]
         },
         "lunch": {
-            "name": "Pasta med korvsås",
+            "name": "Pastasås med ost och små tomater i",
             "notes": null,
             "ingredients": [
                 "pasta",
-                "korv"
+                "ost",
+                "tomat"
             ]
         }
     },
