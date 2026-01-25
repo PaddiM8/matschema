@@ -79,8 +79,8 @@
     },
     "5": {
         "dinner": {
-            "name": "Soppa med köttfärs (anamma?), potatis, paprika, tomatpure, osv.",
-            "notes": null,
+            "name": "Soppa med köttfärs, potatis, ajvar, tomatpure, osv.",
+            "notes": "En burk ajvar. 1,5 kg potatis. 1 kg nötfärs",
             "ingredients": [
                 ["blandfärs", "vegofärs"],
                 "potatis",
