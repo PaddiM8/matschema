@@ -98,12 +98,13 @@
     },
     "6": {
         "dinner": {
-            "name": "Kycklingburgare med brysselkål och grekisk yoghurt",
-            "notes": null,
+            "name": "Linsgryta med naanbröd",
+            "notes": "Gör naanbrödet på pizzastål. Ha nigellafrön i.",
             "ingredients": [
-                "kycklingburgare",
-                "brysselkål",
-                "grekisk-yoghurt"
+                "röda-linser",
+                "morot",
+                "lök",
+                "nigellafrön"
             ]
         },
         "lunch": {
@@ -341,13 +342,12 @@
     },
     "18": {
         "dinner": {
-            "name": "Linsgryta med naanbröd",
-            "notes": "Gör naanbrödet på pizzastål. Ha nigellafrön i.",
+            "name": "Kycklingburgare med brysselkål och grekisk yoghurt",
+            "notes": null,
             "ingredients": [
-                "röda-linser",
-                "morot",
-                "lök",
-                "nigellafrön"
+                "kycklingburgare",
+                "brysselkål",
+                "grekisk-yoghurt"
             ]
         },
         "lunch": {
@@ -393,7 +393,7 @@
             ]
         },
         "lunch": {
-            "name": "Ris/potatis med jordnöttsås (mjölk istället för kokosmjölk)",
+            "name": "Ris/potatis med jordnötsås (mjölk istället för kokosmjölk)",
             "notes": null,
             "ingredients": [
                 "potatis",
