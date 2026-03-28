@@ -120,7 +120,7 @@
     "7": {
         "dinner": {
             "name": "Korv med bröd, rester",
-            "notes": null,
+            "notes": "65g deg per bröd.",
             "ingredients": [
                 "korv",
                 "korvbröd"
@@ -128,7 +128,7 @@
         },
         "lunch": {
             "name": "Chili con carne",
-            "notes": null,
+            "notes": "Blandfärs. Små vita bönor. 1 burk stark ajvar från lidl. Kakao.",
             "ingredients": [
                 "blandfärs",
                 ["vita-bönor", "borlottibönor"]
@@ -267,7 +267,11 @@
         }
     },
     "14": {
-        "dinner": {
+        "lunch": {
+            "name": "Panerad fisk med potatis och skolans kallsås",
+            "notes": null
+        },
+        "lunch": {
             "name": "Ugnsbakad gnocchi i tomatsås och mozzarella",
             "notes": null,
             "ingredients": [
@@ -275,10 +279,6 @@
                 "krossade tomater",
                 "mozzarella"
             ]
-        },
-        "lunch": {
-            "name": "-",
-            "notes": null
         }
     },
     "15": {
