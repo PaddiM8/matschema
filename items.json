@@ -305,15 +305,6 @@
     },
     "16": {
         "dinner": {
-            "name": "Tortellini med tomat, mozzarella och olivolja",
-            "notes": null,
-            "ingredients": [
-                "tortellini",
-                "tomat",
-                "mozzarella"
-            ]
-        },
-        "lunch": {
             "name": "Pasta med ost- och broccolisås (och hasselnötter)",
             "notes": null,
             "ingredients": [
@@ -321,6 +312,19 @@
                 "ost",
                 "broccoli",
                 "hasselnötter"
+            ]
+        },
+        "lunch": {
+            "name": "Kycklinglår med mango chutneysås och ris",
+            "notes": null,
+            "ingredients": [
+                "kycklinglår",
+                "mango-chutney",
+                "grädde",
+                "lök",
+                "morot",
+                "paprika",
+                "ris"
             ]
         }
     },
@@ -462,16 +466,12 @@
             ]
         },
         "lunch": {
-            "name": "Kycklinglår med mango chutneysås och ris",
+            "name": "Tortellini med tomat, mozzarella och olivolja",
             "notes": null,
             "ingredients": [
-                "kycklinglår",
-                "mango-chutney",
-                "grädde",
-                "lök",
-                "morot",
-                "paprika",
-                "ris"
+                "tortellini",
+                "tomat",
+                "mozzarella"
             ]
         }
     },
