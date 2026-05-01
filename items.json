@@ -411,12 +411,12 @@
     },
     "21": {
         "dinner": {
-            "name": "Linsbollar med couscous och grekisk yoghurt",
+            "name": "Vita bönor i tomatsås med rösti",
             "notes": null,
             "ingredients": [
-                "röda-linser",
-                "couscous",
-                "grekisk-yoghurt"
+                "rösti",
+                "passerade-tomater",
+                "vita-bönor"
             ]
         },
         "lunch": {
