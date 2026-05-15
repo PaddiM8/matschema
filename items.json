@@ -388,7 +388,7 @@
     },
     "20": {
         "dinner": {
-            "name": "Ugnsbakat kycklingbröst (som salladskyckling) med pasta och någon dressing",
+            "name": "Pocherat kycklingbröst (som salladskyckling) med pasta och någon dressing",
             "notes": null,
             "ingredients": [
                 "kycklingbröst",
@@ -444,12 +444,16 @@
             ]
         },
         "lunch": {
-            "name": "Pierogi",
+            "name": "Korv stroganoff med pasta",
             "notes": null,
             "ingredients": [
-                "potatis",
-                "grytbitar-nöt",
+                "falukorv",
+                "pasta",
                 "lök",
+                "morot",
+                "ajvar",
+                "tomatpure",
+                "grädde",
                 "creme-fraiche"
             ]
         }
