@@ -420,7 +420,7 @@
             ]
         },
         "lunch": {
-            "name": "Sheperd's pie",
+            "name": "Sheperd's pie eller lasagne",
             "notes": null,
             "ingredients": [
                 "blandfärs",
@@ -492,7 +492,7 @@
             ]
         },
         "lunch": {
-            "name": "Mercimek çorbası (linssoppa med morot och lök) med bröd",
+            "name": "Linssoppa med morot och lök med bröd",
             "notes": null,
             "ingredients": [
                 "röda-linser",
