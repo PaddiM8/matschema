@@ -434,13 +434,14 @@
     },
     "22": {
         "dinner": {
-            "name": "Spenatravioli i ostsås",
-            "notes": "600g mjöl",
+            "name": "Pasta- och broccolisoppa",
+            "notes": null,
             "ingredients": [
-                "spenat",
-                "ricotta",
-                "ägg",
-                "ost"
+                "pasta",
+                "broccoli",
+                "lök",
+                "morot",
+                "grädde"
             ]
         },
         "lunch": {
@@ -650,14 +651,13 @@
     },
     "33": {
         "dinner": {
-            "name": "Pasta- och broccolisoppa",
-            "notes": null,
+            "name": "Spenatravioli i ostsås",
+            "notes": "600g mjöl",
             "ingredients": [
-                "pasta",
-                "broccoli",
-                "lök",
-                "morot",
-                "grädde"
+                "spenat",
+                "ricotta",
+                "ägg",
+                "ost"
             ]
         },
         "lunch": {
