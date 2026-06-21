@@ -493,12 +493,13 @@
             ]
         },
         "lunch": {
-            "name": "Linssoppa med morot och lök med bröd",
+            "name": "Linssoppa med morot, lök och sockerärtor (frysta från ICA) med bröd",
             "notes": null,
             "ingredients": [
                 "röda-linser",
                 "morot",
                 "lök",
+                "sockerärtor",
                 "grädde"
             ]
         }
@@ -527,7 +528,7 @@
     },
     "26": {
         "dinner": {
-            "name": "Hemmagjorda köttbullar med potatismos (halv vecka)",
+            "name": "Hemmagjorda köttbullar med potatismos",
             "notes": null,
             "ingredients": [
                 "blandfärs",
