@@ -589,7 +589,7 @@
             ]
         },
         "lunch": {
-            "name": "",
+            "name": "Quorn med pappardelle",
             "notes": null,
             "ingredients": [
             ]
@@ -686,10 +686,11 @@
             ]
         },
         "lunch": {
-            "name": "Ugnsbakad falukorv med stuvad potatis",
+            "name": "Ugnsbakad falukorv med dillstuvad potatis",
             "notes": null,
             "ingredients": [
                 "falukorv",
+                "dill",
                 "potatis"
             ]
         }
